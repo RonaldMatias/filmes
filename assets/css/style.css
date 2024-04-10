@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--cor-principal: #000000;
+	--cor-textos: #ffffff;
+	--cor-secundaria: #FF0000;
+	--fonte-principal:"Oswald", sans-serif;
+	--fonte-secundaria: "Arial"sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-principal);
+}
+.cabecalho{
+	background: var(--cor-secundaria);
+}
+.cabecalho__menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.2rem;
+	gap: 1rem;
+	
+}
+.cabecalho__menu__item{
+	text-decoration: none;
+	color: var(--cor-textos);
+	font-family: var(--fonte-principal);
+	height: 600;
+	font-size: 1.5rem;
+}
+.cabecalho__menu__item:hover{
+	cursor: pointer;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 0.1rem;
+}
+.cabecalho__menu__item:active{
+	color: var(--cor-principal);
+}
+.conteudo{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);	
+}
+h2{
+	color: var(--cor-textos);
+	text-align: center;
+}
+.filme_info{
+	margin-top: 40px;
+}
+.capa{
+	text-align: center;
+}
+.filme_info__capa{
+	height: 368px;
+	width: 262px;
+}
+.filme_info__descricao{
+	color: var(--cor-textos);
+	font-family: var(--fonte-secundaria);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.3rem;
+	width: 262px;
+	margin: 0 auto;
+	text-align: center;
+}
+.filme_info__saibamais{
+	margin-top: 1.2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.filme_info__bt_saibamais{
+	text-decoration: none;
+	border: 1px solid transparent;);
+	border-radius: 7px;
+	background: var(--cor-secundaria);
+	color: var(--cor-textos);
+	font-size: var(--cor-principal);
+	font-size: 1.2rem;
+	padding: 0.3rem;	
+}
+.filme_info__bt_saibamais:hover{
+	cursor: pointer;
+	color: var(--cor-principal);
+}
+.rodape{
+	color: var(--cor-textos);
+	font-family: var(--fonte-secundaria);
+	text-align: center;
+	background: var(--cor-secundaria);
+	margin-bottom: 0;
+	width: 100%;
+}
